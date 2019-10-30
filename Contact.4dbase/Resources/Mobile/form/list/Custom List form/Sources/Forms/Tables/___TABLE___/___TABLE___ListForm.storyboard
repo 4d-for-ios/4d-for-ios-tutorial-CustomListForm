@@ -6,6 +6,11 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--List Form-->
         <scene sceneID="skp-Bg-beV">
@@ -16,13 +21,76 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="___TABLE___" rowHeight="116" id="LNn-VU-5br" customClass="AnimatableTableViewCell" customModule="IBAnimatable">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="___TABLE___" rowHeight="116" id="LNn-VU-5br" customClass="AnimatableTableViewCell" customModule="IBAnimatable">
                                 <rect key="frame" x="0.0" y="28" width="414" height="116"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LNn-VU-5br" id="bUw-MO-Pjd">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3sz-ZQ-t8j">
+                                            <rect key="frame" x="8" y="3" width="110" height="110"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="110" id="2hK-h0-h22"/>
+                                                <constraint firstAttribute="height" constant="110" id="CwS-lK-8Vu"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="bindTo.record.___FIELD_1___" value="___FIELD_1_BINDING_TYPE___"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3CA-n0-egW">
+                                            <rect key="frame" x="126" y="10" width="277" height="94.333333333333329"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___FIELD_2_LABEL___" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTZ-K6-9oF">
+                                                    <rect key="frame" x="8" y="8" width="269" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="Eg0-rn-nmx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bindTo.record.___FIELD_2___" value="___FIELD_2_BINDING_TYPE___"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___FIELD_3_LABEL___" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hi-Zb-d9T">
+                                                    <rect key="frame" x="8" y="48" width="269" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="Asx-TE-mae"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" name="BackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="bindTo.record.___FIELD_3___" value="___FIELD_3_BINDING_TYPE___"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="HTZ-K6-9oF" firstAttribute="top" secondItem="3CA-n0-egW" secondAttribute="top" constant="8" id="LBK-FX-Jhq"/>
+                                                <constraint firstItem="8hi-Zb-d9T" firstAttribute="leading" secondItem="3CA-n0-egW" secondAttribute="leading" constant="8" id="h9M-hT-G5U"/>
+                                                <constraint firstItem="HTZ-K6-9oF" firstAttribute="leading" secondItem="3CA-n0-egW" secondAttribute="leading" constant="8" id="oCG-Ig-cYL"/>
+                                                <constraint firstItem="8hi-Zb-d9T" firstAttribute="top" secondItem="HTZ-K6-9oF" secondAttribute="bottom" constant="8" id="ods-Wv-PHV"/>
+                                                <constraint firstAttribute="trailing" secondItem="HTZ-K6-9oF" secondAttribute="trailing" id="t2u-Yn-Wi6"/>
+                                                <constraint firstAttribute="trailing" secondItem="8hi-Zb-d9T" secondAttribute="trailing" id="v0e-gg-0wt"/>
+                                                <constraint firstAttribute="bottom" secondItem="8hi-Zb-d9T" secondAttribute="bottom" constant="14.33" id="w4h-aI-dCG"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="3CA-n0-egW" firstAttribute="top" secondItem="bUw-MO-Pjd" secondAttribute="top" constant="10" id="NSE-dR-stt"/>
+                                        <constraint firstItem="3CA-n0-egW" firstAttribute="leading" secondItem="3sz-ZQ-t8j" secondAttribute="trailing" constant="8" id="VNq-cL-Lmm"/>
+                                        <constraint firstItem="3sz-ZQ-t8j" firstAttribute="centerY" secondItem="bUw-MO-Pjd" secondAttribute="centerY" id="hSd-6y-5iv"/>
+                                        <constraint firstAttribute="trailing" secondItem="3CA-n0-egW" secondAttribute="trailing" constant="11" id="pt9-j1-8Et"/>
+                                        <constraint firstItem="3sz-ZQ-t8j" firstAttribute="leading" secondItem="bUw-MO-Pjd" secondAttribute="leading" constant="8" id="r4O-jI-B1x"/>
+                                        <constraint firstAttribute="bottom" secondItem="3CA-n0-egW" secondAttribute="bottom" constant="11.67" id="zhv-7G-j9g"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
